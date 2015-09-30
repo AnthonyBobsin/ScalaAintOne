@@ -5,7 +5,7 @@
   res0: Int = 8
 */
 
-def last(list: List[Int]) = {
+def last[T](list: List[T]): T = {
   list(list.length - 1)
 }
 
@@ -14,4 +14,8 @@ val list = List(1, 1, 2, 3, 5, 8)
 println("List we are working with is " + list)
 print("The result of last: " + last(list) + "\n")
 
+val stringList = List("He", "llo", ", ", "World", "!")
+
+println("List we are working with is " + stringList)
+print("The result of last: " + last(stringList) + "\n")
 
